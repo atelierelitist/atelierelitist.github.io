@@ -1,79 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swift Fortress</title>
+  <meta charset="UTF-8">
+  <title>Swift Fortress | Civic AI Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --gold: #D4AF37;
+      --green: #283629;
+      --black: #161615;
+      --white: #ffffff;
+    }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
       margin: 0;
-      padding: 0;
-      color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
     }
-
     header {
-      background-color: #111;
-      color: white;
-      width: 100%;
-      padding: 20px 0;
+      background-color: var(--green);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    header img {
+      height: 40px;
     }
-
-    img {
-      max-width: 200px;
-      height: auto;
-      margin-top: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 24px;
-      margin-top: 30px;
-      background-color: #111;
-      color: white;
+    nav a {
+      margin-left: 20px;
+      color: var(--gold);
       text-decoration: none;
       font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(145deg, #161615, #283629);
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero img {
+      width: 100px;
+      margin-bottom: 30px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      color: #ccc;
+    }
+    .cta-btn {
+      background: var(--gold);
+      color: var(--black);
+      padding: 15px 30px;
+      font-weight: bold;
+      border: none;
+      margin-top: 30px;
       border-radius: 8px;
-      transition: background-color 0.3s ease;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
-
-    .button:hover {
-      background-color: #333;
+    .cta-btn:hover {
+      background: #bfa534;
     }
-
     footer {
-      margin-top: 40px;
-      font-size: 0.8rem;
-      color: #888;
+      background-color: var(--green);
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Swift Fortress</h1>
+    <img src="logo.png" alt="Swift Fortress Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <img src="logo.PNG" alt="Swift Fortress Logo">
-
-  <p>Empowering Newham through clinically validated civic technology.</p>
-
-  <a href="#" class="button">Explore More</a>
+  <div class="hero">
+    <img src="logo.png" alt="Crest">
+    <h1>Swift Fortress</h1>
+    <p>The opulent AI-powered execution engine for economic regeneration, youth sovereignty and NHS-aligned civic trust. Born in Newham. Deployed everywhere.</p>
+    <button class="cta-btn" onclick="window.location.href='#book'">Book a Private Session</button>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Swift Fortress. All rights reserved.</p>
+    &copy; 2025 Swift Fortress™ • AtelierElitist • All Rights Perfected
   </footer>
+
 </body>
 </html>
