@@ -14,7 +14,7 @@ This vault includes:
 - Proof-of-authorship declarations
 
 ### 📌 Ownership
-All contents of this repo are authored, designed, and owned by [Sheridon Bramwell](https://www.linkedin.com/in/...), trading as **Swift Fortress Strategic Systems Ltd**.
+All contents of this repo are authored, designed, and owned by [Sheridon Bramwell](https://www.linkedin.com/in/...), trading as **Swift Fortress Ltd**.
 
 ### 🕒 Public Proof
 This repo is intended to serve as:
